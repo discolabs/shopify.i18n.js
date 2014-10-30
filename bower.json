@@ -1,0 +1,21 @@
+{
+  "name": "shopify.i18n.js",
+  "version": "0.1.0",
+  "authors": [
+    "Gavin Ballard <gavin@gavinballard.com> (http://gavinballard.com)"
+  ],
+  "description": "A small Javascript library for adding dynamic i18n features to Shopify themes.",
+  "keywords": [
+    "Javascript",
+    "Shopify",
+    "i18n"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
