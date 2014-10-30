@@ -1,6 +1,10 @@
 {
   "name": "shopify.i18n.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/discolabs/shopify.i18n.js.git"
+  },
   "authors": [
     "Gavin Ballard <gavin@gavinballard.com> (http://gavinballard.com)"
   ],
@@ -16,6 +20,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src",
+    "Gruntfile.coffee"
   ]
 }

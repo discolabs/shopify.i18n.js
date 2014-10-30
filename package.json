@@ -1,6 +1,6 @@
 {
   "name": "shopify.i18n.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A small Javascript library for adding dynamic i18n features to Shopify themes.",
   "keywords": "Shopify, i18n, Javascript",
   "license": "MIT",
