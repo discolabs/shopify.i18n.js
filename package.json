@@ -1,8 +1,9 @@
 {
   "name": "shopify.i18n.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A small Javascript library for adding dynamic i18n features to Shopify themes.",
   "keywords": "Shopify, i18n, Javascript",
+  "repository": "discolabs/shopify.i18n.js",
   "license": "MIT",
   "author": "Gavin Ballard <gavin@gavinballard.com> (http://gavinballard.com)",
   "main": "Gruntfile.coffee",
