@@ -173,7 +173,8 @@
   /**
    * Event handler for a currency toggle.
    */
-  function currencyToggledHandler() {
+  function currencyToggledHandler(e) {
+    e.preventDefault(); // Prevent links being clicked.
     var $this = $(this), currency = $this.data('currency');
     convert(currency);
   }
@@ -184,6 +185,9 @@
    * @param currency
    */
   function convert(currency) {
+    // Store the current currency.
+    var oldCurrency = Currency.currentCurrency;
+
     // Call convertAll with all possible formats. Currency.currentCurrency will be set as a side effect.
     Currency.convertAll(Currency.currentCurrency, currency, '[data-convert="money"]', 'money_format');
     Currency.convertAll(Currency.currentCurrency, currency, '[data-convert="money_with_currency"]', 'money_with_currency_format');
@@ -191,6 +195,11 @@
 
     // Save the chosen currency in a cookie.
     Currency.cookie.write(currency);
+
+    // If there was a change in currency, fire the currency changed event.
+    if(oldCurrency != currency) {
+      $(document).trigger('currency.changed', [oldCurrency, currency]);
+    }
   }
 
 
